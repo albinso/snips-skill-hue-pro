@@ -42,7 +42,7 @@ class SnipsHue:
         if self.roomName_roomId.get(room) is None:
             return
         print ("[HUE] turn on")
-        self._put_group_state({"on": True, "bri": 200, "hue": 39392,"sat": 13}, self.roomName_roomId[room])
+        self._put_group_state({"on": True, "bri": 255, "hue": 39392,"sat": 13}, self.roomName_roomId[room])
 
     def light_on_all(self):
         for room in self.roomName_roomId.keys():
